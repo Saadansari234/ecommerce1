@@ -278,6 +278,11 @@ body {
     cursor: pointer;
    }
 
+   .scrollable-content {
+    max-height: 80%; /* Adjust the value to your desired maximum height */
+    overflow-y: auto;
+  }
+
 
 /* pricing section starts here */
 
