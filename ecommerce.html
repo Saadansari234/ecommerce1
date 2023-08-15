@@ -73,6 +73,7 @@
     <div class="pricing-amount-pieces">
       <h4>₹125.00</h4>
       <p>1 piece</p>
+      <p id="piece1" style="display: none;">1</p>
     </div>
     <div class="pricing-addbutton" id="cart-btn1">
           
@@ -98,6 +99,7 @@
     <div class="pricing-amount-pieces">
       <h4>₹10.00</h4>
       <p>1 piece</p>
+      <p id="piece2" style="display: none;">1</p>
     </div>
     <div class="pricing-addbutton" id="cart-btn2" >
           
@@ -122,6 +124,7 @@
     <div class="pricing-amount-pieces">
       <h4>₹15.00</h4>
       <p>2 piece</p>
+      <p id="piece3" style="display: none;">2</p>
     </div>
     <div class="pricing-addbutton" id="cart-btn3">
           
@@ -146,6 +149,7 @@
     <div class="pricing-amount-pieces">
       <h4>₹100.00</h4>
       <p>3 piece</p>
+      <p id="piece4" style="display: none;">3</p>
     </div>
     <div class="pricing-addbutton" id="cart-btn4">
           
@@ -171,6 +175,7 @@
     <div class="pricing-amount-pieces">
       <h4>₹20.00</h4>
       <p>1 piece</p>
+      <p id="piece5" style="display: none;">1</p>
     </div>
     <div class="pricing-addbutton" id="cart-btn5">
           
@@ -196,6 +201,7 @@
     <div class="pricing-amount-pieces">
       <h4>₹15.00</h4>
       <p>2 piece</p>
+      <p id="piece6" style="display: none;">2</p>
     </div>
     <div class="pricing-addbutton" id="cart-btn6">
           
@@ -221,6 +227,7 @@
     <div class="pricing-amount-pieces">
       <h4>₹200.00</h4>
       <p>2 piece</p>
+      <p id="piece7" style="display: none;">2</p>
     </div>
     <div class="pricing-addbutton" id="cart-btn7" id="addtocar-btn">
           
@@ -246,6 +253,7 @@
     <div class="pricing-amount-pieces">
       <h4>₹50.00</h4>
       <p>1 piece</p>
+      <p id="piece8" style="display: none;">1</p>
     </div>
     <div class="pricing-addbutton" id="cart-btn8" id="addtocar-btn">
           
@@ -261,93 +269,177 @@
   
   
   </section>
+  <!-- -------------------------- -->
   <!-- this is our add to cart section -->
+  <!-- -------------------------- -->
   
   <section class="addtocart-section">
     <h3 style="text-align: center; padding-top:1rem; padding-bottom:1rem">add to cart</h3>
     <div class="scrollable-content">
-    <div class="cart-details"  id="cart1">
-        <img src="images/Natural Coconut.jpg" alt="#">
-        <div class="name-pricing-cart">
-            <span class="span1-addtocart"> Natural Coconut</span>
-            <span class="span2-addtocart">₹125.00</span>
-        </div >
-        
-    <input type="number" name="pieces" id="pieces" placeholder="0 piece">
-    </div>
-    <div class="cart-details"  id="cart2" >
-        <img src="images/Organic Baby Beet.jpg" alt="#">
-        <div class="name-pricing-cart">
-            <span class="span1-addtocart">Organic Baby Beet</span>
-            <span class="span2-addtocart">₹10.00</span>
-        </div >
-        
-    <input type="number" name="pieces" id="pieces" placeholder="0 piece">
-    </div>
-    <div class="cart-details"  id="cart3" >
-        <img src="images/Organic Bottle Gourd (Dudhi).jpg" alt="#">
-        <div class="name-pricing-cart">
-            <span class="span1-addtocart">Organic Bottle Gourd</span>
-            <span class="span2-addtocart">₹15.00</span>
-        </div >
-        
-    <input type="number" name="pieces" id="pieces" placeholder="0 piece">
-    </div>
-    <div class="cart-details"  id="cart4" >
-        <img src="images/Organic Butternut Squash.jpg" alt="#">
-        <div class="name-pricing-cart">
-            <span class="span1-addtocart">Organic Butternut Squash</span>
-            <span class="span2-addtocart">₹100.00</span>
-        </div >
-        
-    <input type="number" name="pieces" id="pieces" placeholder="0 piece">
-    </div>
-
-    <div class="cart-details"  id="cart5" >
-      <img src="images/Organic Cabbage.jpg" alt="#">
-      <div class="name-pricing-cart">
-          <span class="span1-addtocart">Organic Cabbage</span>
-          <span class="span2-addtocart">₹20.00</span>
-      </div >
-      
-  <input type="number" name="pieces" id="pieces" placeholder="0 piece">
-  </div>
-
-  <div class="cart-details"  id="cart6" >
-    <img src="images/Organic Red Bell Pepper.jpg" alt="#">
-    <div class="name-pricing-cart">
-        <span class="span1-addtocart">Organic Red Bell Pepper</span>
-        <span class="span2-addtocart">₹15.00</span>
-    </div >
     
-<input type="number" name="pieces" id="pieces" placeholder="0 piece">
+
+<div class="cart-details" id="cart1">
+  <div class="cart-details-product">
+    <img src="images/Natural Coconut.jpg" alt="#">
+    <div class="cart-details-name-price">
+      <h4>Natural Coconut</h4>
+      <p id="result1">125</p>
+      <p id="oldresult1" style="display:none">125</p>
+    </div>
+  </div>
+  <div class="cart-details-pieces">
+   <button class="input-btn" onclick="del1()"><i class="fa-solid fa-trash"></i></button>
+   <button class="input-btn" onclick="min1()"><i class="fa-solid fa-minus"></i></button>
+   <button class="input-btn" onclick="add1()"><i class="fa-solid fa-plus"></i></button>
+   <input type="text" style="width: 3rem;" placeholder="1 piece" id="number1" disabled>
+  </div>
 </div>
 
-<div class="cart-details"  id="cart7"  >
-  <img src="images/Organic Red Pumpkin.jpg" alt="#">
-  <div class="name-pricing-cart">
-      <span class="span1-addtocart">Organic Red Pumpkin</span>
-      <span class="span2-addtocart">₹200.00</span>
-  </div >
-  
-<input type="number" name="pieces" id="pieces" placeholder="0 piece">
+
+<div class="cart-details" id="cart2">
+  <div class="cart-details-product">
+    <img src="images/Organic Baby Beet.jpg" alt="#">
+    <div class="cart-details-name-price">
+      <h4>Organic Baby Beet</h4>
+      <p id="result2">10</p>
+      <p id="oldresult2" style="display:none">10</p>
+    </div>
+  </div>
+  <div class="cart-details-pieces">
+   <button class="input-btn" onclick="del2()"><i class="fa-solid fa-trash"></i></button>
+   <button class="input-btn" onclick="min2()"><i class="fa-solid fa-minus"></i></button>
+   <button class="input-btn" onclick="add2()"><i class="fa-solid fa-plus"></i></button>
+   <input type="text" style="width: 3rem;" placeholder="1 piece" id="number2"disabled>
+  </div>
 </div>
 
-<div class="cart-details"  id="cart8"  >
-  <img src="images/Organic Yellow Bell Pepper.jpg" alt="#">
-  <div class="name-pricing-cart">
-      <span class="span1-addtocart">Organic Yellow Bell Pepper</span>
-      <span class="span2-addtocart">₹50.00</span>
-  </div >
-  
-<input type="number" name="pieces" id="pieces" placeholder="0 piece">
+
+<div class="cart-details" id="cart3">
+  <div class="cart-details-product">
+    <img src="images/Organic Bottle Gourd (Dudhi).jpg" alt="#">
+    <div class="cart-details-name-price">
+      <h4>Organic Bottle Gourd (Dudhi)</h4>
+      <p id="result3">15</p>
+      <p id="oldresult3" style="display:none">15</p>
+    </div>
+  </div>
+  <div class="cart-details-pieces">
+   <button class="input-btn" onclick="del3()"><i class="fa-solid fa-trash"></i></button>
+   <button class="input-btn" onclick="min3()"><i class="fa-solid fa-minus"></i></button>
+   <button class="input-btn" onclick="add3()"><i class="fa-solid fa-plus"></i></button>
+   <input type="text" style="width: 3rem;" placeholder="2 piece"id="number3" disabled>
+  </div>
 </div>
-<div class="place-order-addtocart">
-  <button id="place-order">Place Order</button>
+
+
+<div class="cart-details" id="cart4">
+  <div class="cart-details-product">
+    <img src="images/Organic Butternut Squash.jpg" alt="#">
+    <div class="cart-details-name-price">
+      <h4>Organic Butternut Squash</h4>
+      <p id="result4">100</p>
+      <p id="oldresult4" style="display:none">100</p>
+    </div>
+  </div>
+  <div class="cart-details-pieces">
+   <button class="input-btn" onclick="del4()"><i class="fa-solid fa-trash"></i></button>
+   <button class="input-btn" onclick="min4()"><i class="fa-solid fa-minus"></i></button>
+   <button class="input-btn" onclick="add4()"><i class="fa-solid fa-plus"></i></button>
+   <input type="text" style="width: 3rem;" placeholder="3 piece" id="number4" disabled>
+  </div>
 </div>
+
+
+<div class="cart-details" id="cart5">
+  <div class="cart-details-product">
+    <img src="images/Organic Cabbage.jpg" alt="#">
+    <div class="cart-details-name-price">
+      <h4>Organic Cabbage</h4>
+      <p id="result5">20</p>
+      <p id="oldresult5" style="display:none">20</p>
+    </div>
+  </div>
+  <div class="cart-details-pieces">
+   <button class="input-btn" onclick="del5()"><i class="fa-solid fa-trash"></i></button>
+   <button class="input-btn" onclick="min5()"><i class="fa-solid fa-minus"></i></button>
+   <button class="input-btn" onclick="add5()"><i class="fa-solid fa-plus"></i></button>
+   <input type="text" style="width: 3rem;" placeholder="1 piece" id="number5"disabled>
+  </div>
+</div>
+
+
+<div class="cart-details" id="cart6">
+  <div class="cart-details-product">
+    <img src="images/Organic Red Bell Pepper.jpg" alt="#">
+
+    <div class="cart-details-name-price">
+      <h4>Organic Red Bell Pepper</h4>
+      <p id="result6">15</p>
+      <p id="oldresult6" style="display:none">15</p>
+    </div>
+  </div>
+  <div class="cart-details-pieces">
+   <button class="input-btn" onclick="del6()"><i class="fa-solid fa-trash"></i></button>
+   <button class="input-btn" onclick="min6()"><i class="fa-solid fa-minus"></i></button>
+   <button class="input-btn" onclick="add6()"><i class="fa-solid fa-plus"></i></button>
+   <input type="text" style="width: 3rem;" placeholder="2 piece"id="number6" disabled>
+  </div>
+</div>
+
+
+<div class="cart-details" id="cart7">
+  <div class="cart-details-product">
+    <img src="images/Organic Red Pumpkin.jpg" alt="#">
+
+    <div class="cart-details-name-price">
+      <h4>Organic Red Pumpkin</h4>
+      <p id="result7">200</p>
+      <p id="oldresult7" style="display:none">200</p>
+    </div>
+  </div>
+  <div class="cart-details-pieces">
+   <button class="input-btn" onclick="del7()"><i class="fa-solid fa-trash"></i></button>
+   <button class="input-btn" onclick="min7()"><i class="fa-solid fa-minus"></i></button>
+   <button class="input-btn" onclick="add7()"><i class="fa-solid fa-plus"></i></button>
+   <input type="text" style="width: 3rem;" placeholder="2 piece"id="number7" disabled>
+  </div>
+</div>
+
+
+<div class="cart-details" id="cart8">
+  <div class="cart-details-product">
+    <img src="images/Organic Yellow Bell Pepper.jpg" alt="#">
+    <div class="cart-details-name-price">
+      <h4>Organic Yellow Bell Pepper</h4>
+      <p id="result8">50</p>
+      <p id="oldresult8" style="display:none">50</p>
+    </div>
+  </div>
+  <div class="cart-details-pieces">
+   <button class="input-btn" onclick="del8()"><i class="fa-solid fa-trash"></i></button>
+   <button class="input-btn" onclick="min8()"><i class="fa-solid fa-minus"></i></button>
+   <button class="input-btn" onclick="add8()"><i class="fa-solid fa-plus"></i></button>
+   <input type="text" style="width: 3rem;" placeholder="1 piece"id="number8" disabled>
+  </div>
+</div>
+
+
+
+
+
+
 
 
 <script src="ecommerce.js"></script>
+</div>
+<div style="text-align: center; margin:0.5rem">
+  <label for="total">TOTAL:</label>
+  <input type="text" disabled style="width: 5rem;" id="total" placeholder="0">
+</div>
+
+
+<div class="place-order-addtocart" >
+  <button id="place-order">Place Order</button>
 </div>
    </section>
 
