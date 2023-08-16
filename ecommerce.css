@@ -291,8 +291,49 @@ font-size: 0.9rem;
     max-height: 80%; /* Adjust the value to your desired maximum height */
     overflow-y: auto;
   }
+/* this is our popup section  */
 
+.pricing-whole-page{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup{
+    position: fixed;
+    top: 25%;
+    right: 30%;
+    padding: 3rem 5rem;
+    /* border: 1px solid black; */
+    background: var(--outercolor);
+    transform: translate(0, 0)scale(0.1);
+    text-align: center;
+   border-radius: 2rem;
+   visibility: hidden;
+   transition: transform 0.4s, 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top:30%;
+    transform: translate(0, 0)scale(1);
+}
 
+.fa-truck-fast{
+    color: #75B61A;
+}
+.popup h3{
+ font-weight: 400;
+ color: white;
+ margin-top: 2rem;
+}
+
+.popup button{
+ padding: 0.7rem 3rem;
+margin-top: 2rem;
+font-size: 1rem;
+font-weight: 700;
+}
 /* pricing section starts here */
 
 

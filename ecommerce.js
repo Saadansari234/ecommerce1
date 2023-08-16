@@ -1,5 +1,10 @@
 
 
+
+
+    
+    
+
 //cart1
 // cart-btn1
 
@@ -10,8 +15,14 @@ cart1.style.display="none"
 
 let cart_btn1= document.getElementById("cart-btn1");
 
+
+
+
+
 cart_btn1.addEventListener("click", function(){
     cart1.style.display="flex"
+    
+
     
 })
 
@@ -92,7 +103,8 @@ cart7.style.display="none"
 let cart_btn7= document.getElementById("cart-btn7");
 
 cart_btn7.addEventListener("click", function(){
-    cart7.style.display="flex"
+    cart7.style.display="flex";
+    updateTotalCart();
 
 })
 
@@ -106,7 +118,8 @@ cart8.style.display="none"
 let cart_btn8= document.getElementById("cart-btn8");
 
 cart_btn8.addEventListener("click", function(){
-    cart8.style.display="flex"
+    cart8.style.display="flex";
+    updateTotalCart();
 
 })
 
@@ -123,15 +136,22 @@ let result1= document.getElementById("result1");
 let oldresult1= document.getElementById("oldresult1");
 let piece1= document.getElementById("piece1");
 
-    let currentPiece1= Number(piece1.innerHTML)
+
+
+    let currentPiece1= 0;
+
+    
 
     function add1(){
         currentPiece1+= Number(piece1.innerHTML);
-
+      
+        
     
      if(currentPiece1<=20){
         number1.value= currentPiece1 + "piece";
-        result1.innerHTML= Number(result1.innerHTML)+ Number(oldresult1.innerHTML)
+        let result1plus = Number(result1.innerHTML)+ Number(oldresult1.innerHTML)
+        result1.innerHTML=  result1plus+ ".00"
+       updateTotalCart();
      }
 
     
@@ -142,7 +162,9 @@ let piece1= document.getElementById("piece1");
         currentPiece1-= Number(piece1.innerHTML);
      if(currentPiece1>=0){
         number1.value= currentPiece1 + "piece";
-        result1.innerHTML=  Number(result1.innerHTML)- Number(oldresult1.innerHTML);
+        let result1plus = Number(result1.innerHTML)- Number(oldresult1.innerHTML)
+        result1.innerHTML=  result1plus+ ".00"
+       updateTotalCart();
      }
 
      if(currentPiece1< Number(piece1.innerHTML)){
@@ -165,7 +187,7 @@ let result2= document.getElementById("result2");
 let oldresult2= document.getElementById("oldresult2");
 let piece2= document.getElementById("piece2");
 
-    let currentPiece2= Number(piece2.innerHTML)
+    let currentPiece2= 0;
 
     function add2(){
         currentPiece2+= Number(piece2.innerHTML);
@@ -173,7 +195,9 @@ let piece2= document.getElementById("piece2");
     
      if(currentPiece2<=20){
         number2.value= currentPiece2 + "piece";
-        result2.innerHTML= Number(result2.innerHTML)+ Number(oldresult2.innerHTML)
+        let result2plus = Number(result2.innerHTML)+ Number(oldresult2.innerHTML)
+        result2.innerHTML=  result2plus+ ".00"
+       updateTotalCart();
      }
 
     
@@ -184,7 +208,9 @@ let piece2= document.getElementById("piece2");
         currentPiece2-= Number(piece2.innerHTML);
      if(currentPiece2>=0){
         number2.value= currentPiece2 + "piece";
-        result2.innerHTML=  Number(result2.innerHTML)- Number(oldresult2.innerHTML);
+        let result2plus = Number(result2.innerHTML)- Number(oldresult2.innerHTML)
+        result2.innerHTML=  result2plus+ ".00"
+       updateTotalCart();
      }
 
      if(currentPiece2< Number(piece2.innerHTML)){
@@ -207,7 +233,7 @@ let piece2= document.getElementById("piece2");
     let oldresult3= document.getElementById("oldresult3");
     let piece3= document.getElementById("piece3");
     
-        let currentPiece3= Number(piece3.innerHTML)
+        let currentPiece3= 0;
     
 
     function add3(){
@@ -216,7 +242,9 @@ let piece2= document.getElementById("piece2");
     
      if(currentPiece3<=20){
         number3.value= currentPiece3 + "piece";
-        result3.innerHTML= Number(result3.innerHTML)+ Number(oldresult3.innerHTML)
+        let result3plus = Number(result3.innerHTML)+ Number(oldresult3.innerHTML)
+        result3.innerHTML=  result3plus+ ".00"
+        updateTotalCart();
      }
 
     
@@ -227,7 +255,9 @@ let piece2= document.getElementById("piece2");
         currentPiece3-= Number(piece3.innerHTML);
      if(currentPiece3>=0){
         number3.value= currentPiece3 + "piece";
-        result3.innerHTML=  Number(result3.innerHTML)- Number(oldresult3.innerHTML);
+        let result3plus = Number(result3.innerHTML)- Number(oldresult3.innerHTML)
+        result3.innerHTML=  result3plus+ ".00"
+       updateTotalCart();
      }
 
      if(currentPiece3< Number(piece3.innerHTML)){
@@ -251,7 +281,7 @@ let piece2= document.getElementById("piece2");
     let oldresult4= document.getElementById("oldresult4");
     let piece4= document.getElementById("piece4");
     
-        let currentPiece4= Number(piece4.innerHTML)
+        let currentPiece4= 0;
     
 
     function add4(){
@@ -260,7 +290,9 @@ let piece2= document.getElementById("piece2");
     
      if(currentPiece4<=20){
         number4.value= currentPiece4 + "piece";
-        result4.innerHTML= Number(result4.innerHTML)+ Number(oldresult4.innerHTML)
+        let result4plus = Number(result4.innerHTML)+ Number(oldresult4.innerHTML)
+        result4.innerHTML=  result4plus+ ".00"
+       updateTotalCart();
      }
 
     
@@ -271,7 +303,9 @@ let piece2= document.getElementById("piece2");
         currentPiece4-= Number(piece4.innerHTML);
      if(currentPiece4>=0){
         number4.value= currentPiece4 + "piece";
-        result4.innerHTML=  Number(result4.innerHTML)- Number(oldresult4.innerHTML);
+        let result4plus = Number(result4.innerHTML)- Number(oldresult4.innerHTML)
+        result4.innerHTML=  result4plus+ ".00"
+        updateTotalCart();
      }
 
      if(currentPiece4< Number(piece4.innerHTML)){
@@ -294,7 +328,7 @@ let piece2= document.getElementById("piece2");
     let oldresult5= document.getElementById("oldresult5");
     let piece5= document.getElementById("piece5");
     
-        let currentPiece5= Number(piece5.innerHTML)
+        let currentPiece5= 0;
     
 
     function add5(){
@@ -303,7 +337,9 @@ let piece2= document.getElementById("piece2");
     
      if(currentPiece5<=20){
         number5.value= currentPiece5 + "piece";
-        result5.innerHTML= Number(result5.innerHTML)+ Number(oldresult5.innerHTML)
+        let result5plus = Number(result5.innerHTML)+ Number(oldresult5.innerHTML)
+        result5.innerHTML=  result5plus+ ".00"
+       updateTotalCart();
      }
 
     
@@ -314,7 +350,9 @@ let piece2= document.getElementById("piece2");
         currentPiece5-= Number(piece5.innerHTML);
      if(currentPiece5>=0){
         number5.value= currentPiece5 + "piece";
-        result5.innerHTML=  Number(result5.innerHTML)- Number(oldresult5.innerHTML);
+        let result5plus = Number(result5.innerHTML)- Number(oldresult5.innerHTML)
+        result5.innerHTML=  result5plus+ ".00"
+       updateTotalCart();
      }
 
      if(currentPiece5< Number(piece5.innerHTML)){
@@ -336,7 +374,7 @@ let piece2= document.getElementById("piece2");
     let oldresult6= document.getElementById("oldresult6");
     let piece6= document.getElementById("piece6");
     
-        let currentPiece6= Number(piece6.innerHTML)
+        let currentPiece6= 0
     
 
     function add6(){
@@ -345,7 +383,9 @@ let piece2= document.getElementById("piece2");
     
      if(currentPiece6<=20){
         number6.value= currentPiece6 + "piece";
-        result6.innerHTML= Number(result6.innerHTML)+ Number(oldresult6.innerHTML)
+        let result6plus = Number(result6.innerHTML)+ Number(oldresult6.innerHTML)
+        result6.innerHTML=  result6plus+ ".00"
+       updateTotalCart();
      }
 
     
@@ -356,7 +396,9 @@ let piece2= document.getElementById("piece2");
         currentPiece6-= Number(piece6.innerHTML);
      if(currentPiece6>=0){
         number6.value= currentPiece6 + "piece";
-        result6.innerHTML=  Number(result6.innerHTML)- Number(oldresult6.innerHTML);
+        let result6plus = Number(result6.innerHTML)- Number(oldresult6.innerHTML)
+        result6.innerHTML=  result6plus+ ".00"
+       updateTotalCart();
      }
 
      if(currentPiece6< Number(piece6.innerHTML)){
@@ -378,7 +420,7 @@ let piece2= document.getElementById("piece2");
     let oldresult7= document.getElementById("oldresult7");
     let piece7= document.getElementById("piece7");
     
-        let currentPiece7= Number(piece7.innerHTML)
+        let currentPiece7= 0;
     
 
     function add7(){
@@ -387,7 +429,9 @@ let piece2= document.getElementById("piece2");
     
      if(currentPiece7<=20){
         number7.value= currentPiece7 + "piece";
-        result7.innerHTML= Number(result7.innerHTML)+ Number(oldresult7.innerHTML)
+        let result7plus = Number(result7.innerHTML)+ Number(oldresult7.innerHTML)
+        result7.innerHTML=  result7plus+ ".00"
+        updateTotalCart()
      }
 
     
@@ -398,7 +442,9 @@ let piece2= document.getElementById("piece2");
         currentPiece7-= Number(piece7.innerHTML);
      if(currentPiece7>=0){
         number7.value= currentPiece7 + "piece";
-        result7.innerHTML=  Number(result7.innerHTML)- Number(oldresult7.innerHTML);
+        let result7plus = Number(result7.innerHTML)- Number(oldresult7.innerHTML)
+        result7.innerHTML=  result7plus+ ".00"
+          updateTotalCart()
      }
 
      if(currentPiece7< Number(piece7.innerHTML)){
@@ -419,8 +465,11 @@ let piece2= document.getElementById("piece2");
     let result8= document.getElementById("result8");
     let oldresult8= document.getElementById("oldresult8");
     let piece8= document.getElementById("piece8");
+
     
-        let currentPiece8= Number(piece8.innerHTML)
+    
+    
+        let currentPiece8= 0;
     
 
     function add8(){
@@ -429,7 +478,10 @@ let piece2= document.getElementById("piece2");
     
      if(currentPiece8<=20){
         number8.value= currentPiece8 + "piece";
-        result8.innerHTML= Number(result8.innerHTML)+ Number(oldresult8.innerHTML)
+        let result8plus = Number(result8.innerHTML)+ Number(oldresult8.innerHTML)
+        result8.innerHTML=  result8plus+ ".00"
+        updateTotalCart();
+        
      }
 
     
@@ -440,7 +492,9 @@ let piece2= document.getElementById("piece2");
         currentPiece8-= Number(piece8.innerHTML);
      if(currentPiece8>=0){
         number8.value= currentPiece8 + "piece";
-        result8.innerHTML=  Number(result8.innerHTML)- Number(oldresult8.innerHTML);
+        let result8plus = Number(result8.innerHTML)- Number(oldresult8.innerHTML)
+        result8.innerHTML=  result8plus+ ".00"
+        updateTotalCart();
      }
 
      if(currentPiece8< Number(piece8.innerHTML)){
@@ -459,9 +513,35 @@ let piece2= document.getElementById("piece2");
     //cart8
 
 
+    // cart total update  function
 
-    // this is our total section 
+    let total_cart = document.getElementById("total-cart");
 
-let total= document.getElementById("total");
+function updateTotalCart() {
 
-total.value= "hh"
+
+  let total = Number(result7.innerHTML)+ Number(result8.innerHTML)+ Number(result4.innerHTML) + Number(result3.innerHTML)+ Number(result2.innerHTML)+Number(result1.innerHTML)+ Number(result5.innerHTML)+Number(result6.innerHTML) ;
+  total_cart.value = total + ".00";
+
+}
+
+// this is our popup section 
+
+
+let popup= document.getElementById("popup");
+let pricingpage= document.getElementById("pricingpage")
+
+function openpopup() {
+    
+    if (total_cart.value != 0 ) {
+        popup.classList.add("open-popup");
+        pricingpage.style.opacity= 0.1
+    }
+}
+
+function closepopup() {
+    popup.classList.remove("open-popup")
+    pricingpage.style.opacity= 1
+}
+
+
