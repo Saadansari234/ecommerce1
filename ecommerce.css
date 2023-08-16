@@ -38,6 +38,14 @@ body {
 
 }
 
+.nav-bar ul li a{
+    text-decoration: none;
+}
+
+.nav-bar ul li:hover{
+cursor: pointer;
+}
+
 .hero {
     display: flex;
     justify-content: center;
@@ -266,6 +274,10 @@ font-size: 0.9rem;
     margin-right: 0.3rem;
 }
 
+.input-btn:hover{
+    cursor: pointer;
+}
+
 
 
    .place-order-addtocart{
@@ -312,6 +324,7 @@ font-size: 0.9rem;
    border-radius: 2rem;
    visibility: hidden;
    transition: transform 0.4s, 0.4s;
+   font-variant: small-caps;
 }
 .open-popup{
     visibility: visible;
