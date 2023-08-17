@@ -529,14 +529,17 @@ function updateTotalCart() {
 
 
 let popup= document.getElementById("popup");
-let pricingpage= document.getElementById("pricingpage")
+let pricingpage= document.getElementById("pricingpage");
+let bodytag= document.getElementById("body-tag");
+let navbar= document.getElementById("nav-bar");
 
 function openpopup() {
     
     if (total_cart.value != 0 ) {
         popup.classList.add("open-popup");
         pricingpage.style.opacity= 0.1
-        
+        bodytag.style.overflow="hidden"
+        navbar.style.opacity=0.1
     }
 }
 
@@ -552,6 +555,8 @@ function closepopup() {
     cart7.style.display="none"
     cart8.style.display="none"
     total_cart.value = 0
+    bodytag.style.overflow="auto"
+    navbar.style.opacity=1
 }
 
 
