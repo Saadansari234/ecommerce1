@@ -536,12 +536,22 @@ function openpopup() {
     if (total_cart.value != 0 ) {
         popup.classList.add("open-popup");
         pricingpage.style.opacity= 0.1
+        
     }
 }
 
 function closepopup() {
     popup.classList.remove("open-popup")
-    pricingpage.style.opacity= 1
+    pricingpage.style.opacity= 1;
+    cart1.style.display="none"
+    cart2.style.display="none"
+    cart3.style.display="none"
+    cart4.style.display="none"
+    cart5.style.display="none"
+    cart6.style.display="none"
+    cart7.style.display="none"
+    cart8.style.display="none"
+    total_cart.value = 0
 }
 
 

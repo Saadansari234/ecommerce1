@@ -223,7 +223,7 @@
         <p>2 piece</p>
         <p id="piece7" style="display: none;">2</p>
       </div>
-      <div class="pricing-addbutton" id="cart-btn7" id="addtocar-btn">
+      <div class="pricing-addbutton" id="cart-btn7" >
             
                 <img src="images/delivery icon.svg" alt="" style="width:1.5rem; height:1.5rem;">
                 <p>Add</p>
@@ -249,7 +249,7 @@
         <p>1 piece</p>
         <p id="piece8" style="display: none;">1</p>
       </div>
-      <div class="pricing-addbutton" id="cart-btn8" id="addtocar-btn">
+      <div class="pricing-addbutton" id="cart-btn8">
             
                 <img src="images/delivery icon.svg" alt="" style="width:1.5rem; height:1.5rem;">
                 <p>Add</p>
@@ -268,7 +268,7 @@
     <!-- -------------------------- -->
     
     <section class="addtocart-section">
-      <h3 style="text-align: center; padding-top:1rem; padding-bottom:1rem">add to cart</h3>
+      <h3 class="add-tocart-heading">add to cart</h3>
       <div class="scrollable-content">
       
   
@@ -285,7 +285,7 @@
      <button class="input-btn" onclick="del1()"><i class="fa-solid fa-trash"></i></button>
      <button class="input-btn" onclick="min1()"><i class="fa-solid fa-minus"></i></button>
      <button class="input-btn" onclick="add1()"><i class="fa-solid fa-plus"></i></button>
-     <input type="text" style="width: 3rem;" placeholder="0 piece" id="number1" disabled>
+     <input type="text" style="width: 3rem;" placeholder="0 piece" id="number1" class="pieces-cart" disabled>
     </div>
   </div>
   
@@ -303,7 +303,7 @@
      <button class="input-btn" onclick="del2()"><i class="fa-solid fa-trash"></i></button>
      <button class="input-btn" onclick="min2()"><i class="fa-solid fa-minus"></i></button>
      <button class="input-btn" onclick="add2()"><i class="fa-solid fa-plus"></i></button>
-     <input type="text" style="width: 3rem;" placeholder="0 piece" id="number2"disabled>
+     <input type="text" style="width: 3rem;" placeholder="0 piece" id="number2" class="pieces-cart"  disabled>
     </div>
   </div>
   
@@ -321,7 +321,7 @@
      <button class="input-btn" onclick="del3()"><i class="fa-solid fa-trash"></i></button>
      <button class="input-btn" onclick="min3()"><i class="fa-solid fa-minus"></i></button>
      <button class="input-btn" onclick="add3()"><i class="fa-solid fa-plus"></i></button>
-     <input type="text" style="width: 3rem;" placeholder="0 piece"id="number3" disabled>
+     <input type="text" style="width: 3rem;" placeholder="0 piece"id="number3" class="pieces-cart" disabled>
     </div>
   </div>
   
@@ -339,7 +339,7 @@
      <button class="input-btn" onclick="del4()"><i class="fa-solid fa-trash"></i></button>
      <button class="input-btn" onclick="min4()"><i class="fa-solid fa-minus"></i></button>
      <button class="input-btn" onclick="add4()"><i class="fa-solid fa-plus"></i></button>
-     <input type="text" style="width: 3rem;" placeholder="0 piece" id="number4" disabled>
+     <input type="text" style="width: 3rem;" placeholder="0 piece" id="number4" class="pieces-cart" disabled>
     </div>
   </div>
   
@@ -357,7 +357,7 @@
      <button class="input-btn" onclick="del5()"><i class="fa-solid fa-trash"></i></button>
      <button class="input-btn" onclick="min5()"><i class="fa-solid fa-minus"></i></button>
      <button class="input-btn" onclick="add5()"><i class="fa-solid fa-plus"></i></button>
-     <input type="text" style="width: 3rem;" placeholder="0 piece" id="number5"disabled>
+     <input type="text" style="width: 3rem;" placeholder="0 piece" id="number5" class="pieces-cart" disabled>
     </div>
   </div>
   
@@ -376,7 +376,7 @@
      <button class="input-btn" onclick="del6()"><i class="fa-solid fa-trash"></i></button>
      <button class="input-btn" onclick="min6()"><i class="fa-solid fa-minus"></i></button>
      <button class="input-btn" onclick="add6()"><i class="fa-solid fa-plus"></i></button>
-     <input type="text" style="width: 3rem;" placeholder="0 piece"id="number6" disabled>
+     <input type="text" style="width: 3rem;" placeholder="0 piece"id="number6" class="pieces-cart" disabled>
     </div>
   </div>
   
@@ -395,7 +395,7 @@
      <button class="input-btn" onclick="del7()"><i class="fa-solid fa-trash"></i></button>
      <button class="input-btn" onclick="min7()"><i class="fa-solid fa-minus"></i></button>
      <button class="input-btn" onclick="add7()"><i class="fa-solid fa-plus"></i></button>
-     <input type="text" style="width: 3rem;" placeholder="0 piece"id="number7" disabled>
+     <input type="text" style="width: 3rem;" placeholder="0 piece"id="number7" class="pieces-cart" disabled>
     </div>
   </div>
   
@@ -413,7 +413,7 @@
      <button class="input-btn" onclick="del8()"><i class="fa-solid fa-trash"></i></button>
      <button class="input-btn" onclick="min8()"><i class="fa-solid fa-minus"></i></button>
      <button class="input-btn" onclick="add8()"><i class="fa-solid fa-plus"></i></button>
-     <input type="text" style="width: 3rem;" placeholder="0 piece"id="number8" disabled>
+     <input type="text" style="width: 3rem;" placeholder="0 piece"id="number8" class="pieces-cart" disabled>
     </div>
   </div>
   
@@ -428,7 +428,7 @@
   </div>
   
   <div style="text-align: center; margin:0.5rem">
-    <label for="total">TOTAL:</label>
+    <label for="total" class="total">total:</label>
     <input type="text" disabled style="width: 5rem;" id="total-cart" placeholder="0">
   </div>
   
